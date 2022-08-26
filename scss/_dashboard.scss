@@ -1,16 +1,20 @@
 .dashboard {
 	display: flex;
 	flex-wrap: wrap;
-	left: 10%;
+	left: 5%;
 	position: absolute;
 	top: 30%;
 
 	&__item {
+		align-content: flex-start;
 		background-color: $lightGrayishBlueCarkBg;
 		border-radius: 0.5rem;
-		height: 30vh;
+		display: flex;
+		flex-wrap: wrap;
+		height: 35vh;
 		margin-bottom: 1.5rem;
-		width: 90%;
+		text-align: center;
+		width: 95%;
 	}
 
 	&__item--facebook {
@@ -42,5 +46,48 @@
 
 	&__item--youtube {
 		border-top: 0.5rem solid $youtube;
+
+		& .dashboard__increase {
+			color: $brightRed;
+		}
+	}
+
+	&__name {
+		color: $darkGrayishBlueText;
+		display: flex;
+		flex-basis: 100%;
+		font-size: 1.3rem;
+		font-weight: 700;
+		justify-content: center;
+		margin-top: 3rem;
+	}
+
+	&__icon {
+		margin-right: 0.8rem;
+	}
+
+	&__range {
+		color: $darkGrayishBlueText;
+		flex-basis: 100%;
+		letter-spacing: 0.5rem;
+		text-transform: uppercase;
+
+		& .dashboard__number {
+			color: $veryDarkBlueText;
+			display: block;
+			flex-basis: 100%;
+			font-size: 6rem;
+			font-weight: 700;
+			letter-spacing: 0;
+			text-transform: lowercase;
+		}
+	}
+
+	&__increase {
+		color: $limeGreen;
+		flex-basis: 100%;
+		font-size: 1.2rem;
+		font-weight: 700;
+		margin-top: 2rem;
 	}
 }
