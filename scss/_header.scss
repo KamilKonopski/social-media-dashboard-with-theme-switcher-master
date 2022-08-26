@@ -50,9 +50,10 @@
 
 	&__theme-button {
 		align-self: center;
-		background-color: $toggleLight;
+		background: $toggleLight;
 		border: none;
 		border-radius: 2.5rem;
+		cursor: pointer;
 		height: 2.5rem;
 		margin-right: 2rem;
 		width: 5rem;
@@ -67,11 +68,22 @@
 			border-radius: 50%;
 			background-color: $whiteBg;
 			display: block;
-			height: 2rem;
+			height: 1.8rem;
 			margin: 0.2rem 0.3rem;
-			transform: translateX(120%);
-			width: 2rem;
+			transform: translateX(140%);
+			width: 1.8rem;
 			transition: transform 0.3s linear;
+		}
+
+		&:hover {
+			background: $toggleDark;
+		}
+
+		&.header__theme-button--dark-mode {
+			background: $toggleDark;
+			& .header__icon {
+				transform: translateX(0);
+			}
 		}
 	}
 }
