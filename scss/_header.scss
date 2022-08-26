@@ -6,25 +6,46 @@
 	flex-wrap: wrap;
 	height: 30vh;
 	justify-content: space-between;
-	padding: 3rem 0 0 2rem;
+
+	@media screen and (min-width: 1024px) {
+		align-items: baseline;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+
+	&__text {
+		flex-basis: 90%;
+		margin: 3rem 0 1.5rem 2rem;
+
+		@media screen and (min-width: 1024px) {
+			flex-basis: 65%;
+			margin: 3rem 0 1.5rem 15rem;
+		}
+	}
+
 	&__title {
-		font-size: 2.6rem;
+		font-size: 2.4rem;
 		margin: 0 0 0.5rem 0;
-		flex-basis: 100%;
 	}
 
 	&__followers {
 		border-bottom: 0.1rem solid $veryDarkBlueText;
 		color: $darkGrayishBlueText;
-		flex-basis: 95%;
+		display: block;
 		font-weight: 700;
 		margin-bottom: 1rem;
 		padding-bottom: 2.5rem;
+		width: 100%;
+
+		@media screen and (min-width: 1024px) {
+			border-bottom: none;
+		}
 	}
 
 	&__theme-text {
 		color: $darkGrayishBlueText;
 		font-weight: 700;
+		margin-left: 2rem;
 	}
 
 	&__theme-button {
@@ -36,13 +57,19 @@
 		margin-right: 2rem;
 		width: 5rem;
 
+		@media screen and (min-width: 1024px) {
+			align-self: flex-start;
+			margin-right: 15rem;
+			margin-top: 3.2rem;
+		}
+
 		& .header__icon {
 			border-radius: 50%;
 			background-color: $whiteBg;
 			display: block;
 			height: 2rem;
-			margin: 0.2rem 0.4rem;
-			transform: translateX(100%);
+			margin: 0.2rem 0.3rem;
+			transform: translateX(120%);
 			width: 2rem;
 			transition: transform 0.3s linear;
 		}
