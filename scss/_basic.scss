@@ -13,3 +13,15 @@ body {
 	margin: 0 auto;
 	max-width: 1440px;
 }
+
+.attribution {
+	background: $toggleDark;
+	color: $veryDarkBlueText;
+	height: 5vh;
+	line-height: 5vh;
+	text-align: center;
+
+	& a {
+		text-decoration: none;
+	}
+}
