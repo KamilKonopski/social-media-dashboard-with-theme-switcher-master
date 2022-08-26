@@ -1,5 +1,46 @@
 .dashboard {
-	left: 0%;
+	display: flex;
+	flex-wrap: wrap;
+	left: 10%;
 	position: absolute;
-	top: 0%;
+	top: 30%;
+
+	&__item {
+		background-color: $lightGrayishBlueCarkBg;
+		border-radius: 0.5rem;
+		height: 30vh;
+		margin-bottom: 1.5rem;
+		width: 90%;
+	}
+
+	&__item--facebook {
+		border-top: 0.5rem solid $facebook;
+	}
+
+	&__item--twitter {
+		border-top: 0.5rem solid $twitter;
+	}
+
+	&__item--instagram {
+		border-radius: 0;
+		margin-top: 0.5rem;
+		position: relative;
+
+		&::before {
+			background: $instagram;
+			border-radius: 0.5rem;
+			content: "";
+			display: block;
+			left: 0%;
+			height: 2vh;
+			position: absolute;
+			top: -3%;
+			width: 100%;
+			z-index: -1;
+		}
+	}
+
+	&__item--youtube {
+		border-top: 0.5rem solid $youtube;
+	}
 }
