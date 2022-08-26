@@ -1,0 +1,50 @@
+.header {
+	align-content: flex-start;
+	background-color: $veryPaleBlueBgPattern;
+	border-radius: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	height: 30vh;
+	justify-content: space-between;
+	padding: 3rem 0 0 2rem;
+	&__title {
+		font-size: 2.6rem;
+		margin: 0 0 0.5rem 0;
+		flex-basis: 100%;
+	}
+
+	&__followers {
+		border-bottom: 0.1rem solid $veryDarkBlueText;
+		color: $darkGrayishBlueText;
+		flex-basis: 95%;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		padding-bottom: 2.5rem;
+	}
+
+	&__theme-text {
+		color: $darkGrayishBlueText;
+		font-weight: 700;
+	}
+
+	&__theme-button {
+		align-self: center;
+		background-color: $toggleLight;
+		border: none;
+		border-radius: 2.5rem;
+		height: 2.5rem;
+		margin-right: 2rem;
+		width: 5rem;
+
+		& .header__icon {
+			border-radius: 50%;
+			background-color: $whiteBg;
+			display: block;
+			height: 2rem;
+			margin: 0.2rem 0.4rem;
+			transform: translateX(100%);
+			width: 2rem;
+			transition: transform 0.3s linear;
+		}
+	}
+}
