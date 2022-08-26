@@ -15,12 +15,17 @@ body {
 }
 
 .attribution {
-	background: $toggleDark;
-	color: $veryDarkBlueText;
-	height: 5vh;
-	margin-top: 60rem;
-	line-height: 5vh;
-	text-align: center;
+	display: none;
+
+	@media screen and (min-width: 1024px) {
+		background: $toggleDark;
+		color: $veryDarkBlueText;
+		display: block;
+		height: 5vh;
+		line-height: 5vh;
+		margin-top: 60rem;
+		text-align: center;
+	}
 
 	& a {
 		text-decoration: none;
