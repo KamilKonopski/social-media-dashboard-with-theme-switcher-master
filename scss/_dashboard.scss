@@ -5,6 +5,13 @@
 	position: absolute;
 	top: 30%;
 
+	@media screen and (min-width: 1024px) {
+		flex-wrap: nowrap;
+		left: 17%;
+		top: 13%;
+		width: 100%;
+	}
+
 	&__item {
 		align-content: flex-start;
 		background-color: $lightGrayishBlueCarkBg;
@@ -15,6 +22,12 @@
 		margin-bottom: 1.5rem;
 		text-align: center;
 		width: 95%;
+
+		@media screen and (min-width: 1024px) {
+			margin-left: 2.5rem;
+			height: 25vh;
+			width: 15%;
+		}
 	}
 
 	&__item--facebook {
@@ -26,21 +39,16 @@
 	}
 
 	&__item--instagram {
-		border-radius: 0;
-		margin-top: 0.5rem;
 		position: relative;
 
 		&::before {
 			background: $instagram;
-			border-radius: 0.5rem;
+			border-radius: 0.5rem 0.5rem 0 0;
 			content: "";
 			display: block;
-			left: 0%;
-			height: 2vh;
+			height: 0.5rem;
 			position: absolute;
-			top: -2%;
 			width: 100%;
-			z-index: -1;
 		}
 	}
 
