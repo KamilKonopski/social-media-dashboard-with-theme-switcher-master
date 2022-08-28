@@ -1,15 +1,12 @@
 .dashboard {
 	display: flex;
 	flex-wrap: wrap;
-	left: 5%;
-	position: absolute;
-	top: 30%;
+	justify-content: center;
+	transform: translateY(-3%);
 
 	@media screen and (min-width: 1024px) {
 		flex-wrap: nowrap;
-		left: 17%;
-		top: 13%;
-		width: 100%;
+		transform: translateY(-50%);
 	}
 
 	&__item {
@@ -26,7 +23,7 @@
 		@media screen and (min-width: 1024px) {
 			margin-left: 2.5rem;
 			height: 25vh;
-			width: 15%;
+			width: 20%;
 		}
 	}
 
