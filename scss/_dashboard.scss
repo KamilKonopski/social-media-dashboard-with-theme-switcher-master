@@ -13,12 +13,17 @@
 		align-content: flex-start;
 		background-color: $lightGrayishBlueCarkBg;
 		border-radius: 0.5rem;
+		cursor: pointer;
 		display: flex;
 		flex-wrap: wrap;
 		height: 35vh;
 		margin-bottom: 1.5rem;
 		text-align: center;
 		width: 90%;
+
+		&:hover {
+			background-color: darken($lightGrayishBlueCarkBg, 2%);
+		}
 
 		@media screen and (min-width: 1024px) {
 			margin-left: 2.5rem;
