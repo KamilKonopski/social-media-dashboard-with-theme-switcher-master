@@ -7,6 +7,19 @@
 	height: 35vh;
 	justify-content: space-between;
 
+	&.dark {
+		background-color: $veryDarkBlueBgPattern;
+		color: $whiteDarkText;
+
+		& .header__followers {
+			color: $desaturatedBlueText;
+		}
+
+		& .header__theme-text {
+			color: $whiteDarkText;
+		}
+	}
+
 	@media screen and (min-width: 1024px) {
 		align-items: baseline;
 		flex-wrap: nowrap;

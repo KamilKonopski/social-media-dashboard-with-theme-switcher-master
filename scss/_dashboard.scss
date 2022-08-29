@@ -21,6 +21,25 @@
 		text-align: center;
 		width: 90%;
 
+		&.dark {
+			background-color: $darkDesaturatedBlueCardBg;
+
+			&:hover {
+				background-color: lighten($darkDesaturatedBlueCardBg, 6%);
+			}
+			& .dashboard__name {
+				color: $desaturatedBlueText;
+			}
+
+			& .dashboard__number {
+				color: $whiteDarkText;
+			}
+
+			& .dashboard__range {
+				color: $desaturatedBlueText;
+			}
+		}
+
 		&:hover {
 			background-color: darken($lightGrayishBlueCarkBg, 2%);
 		}

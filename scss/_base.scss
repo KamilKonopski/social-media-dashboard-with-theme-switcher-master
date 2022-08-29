@@ -8,10 +8,15 @@ html {
 }
 
 body {
+	background-color: $whiteBg;
 	font-family: "Inter", sans-serif;
 	font-size: 1.4rem;
 	margin: 0 auto;
 	max-width: 1440px;
+
+	&.dark {
+		background-color: $veryDarkBlueBg;
+	}
 }
 
 .attribution {
