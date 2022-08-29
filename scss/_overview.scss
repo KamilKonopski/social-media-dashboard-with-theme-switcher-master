@@ -24,11 +24,16 @@
 	&__item {
 		background-color: $lightGrayishBlueCarkBg;
 		border-radius: 0.5rem;
+		cursor: pointer;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin: 2rem auto 0;
 		width: 90%;
+
+		&:hover {
+			background-color: darken($lightGrayishBlueCarkBg, 2%);
+		}
 	}
 
 	&__name {
