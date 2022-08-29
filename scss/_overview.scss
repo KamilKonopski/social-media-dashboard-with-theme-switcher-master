@@ -1,13 +1,29 @@
 .overview {
+	@media screen and (min-width: 1024px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin-left: 10rem;
+		transform: translateY(-25%);
+		width: 88%;
+	}
+
 	&__title {
 		color: $darkGrayishBlueText;
 		display: block;
 		font-size: 2.5rem;
 		margin: 0 auto;
 		width: 90%;
+
+		@media screen and (min-width: 1024px) {
+			grid-column: 1/-1;
+			justify-content: start;
+			margin: 0;
+			margin-left: 1.8rem;
+		}
 	}
 	&__item {
 		background-color: $lightGrayishBlueCarkBg;
+		border-radius: 0.5rem;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -20,11 +36,20 @@
 		flex-basis: 80%;
 		font-weight: 700;
 		margin: 2.5rem 0 0 2rem;
+
+		@media screen and (min-width: 1024px) {
+			flex-basis: 60%;
+		}
 	}
 
 	&__icon {
 		height: 3vh;
 		margin: 2.5rem 2rem 0 0;
+
+		@media screen and (min-width: 1024px) {
+			height: 2vh;
+			margin: 2.5rem 2.5rem 0 0;
+		}
 	}
 
 	&__number {
@@ -38,6 +63,10 @@
 		color: $limeGreen;
 		font-weight: 700;
 		margin-right: 2rem;
+
+		@media screen and (min-width: 1024px) {
+			margin-right: 2.5rem;
+		}
 	}
 
 	.overview__range--negative {
