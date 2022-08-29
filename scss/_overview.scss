@@ -41,17 +41,18 @@
 
 		&.dark {
 			background-color: $darkDesaturatedBlueCardBg;
+
 			&:hover {
 				background-color: lighten($darkDesaturatedBlueCardBg, 6%);
 			}
-		}
 
-		& .overview__name {
-			color: $desaturatedBlueText;
-		}
+			& .overview__name {
+				color: $desaturatedBlueText;
+			}
 
-		& .overview__number {
-			color: $whiteDarkText;
+			& .overview__number {
+				color: $whiteDarkText;
+			}
 		}
 	}
 
