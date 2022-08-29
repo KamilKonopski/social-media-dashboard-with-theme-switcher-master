@@ -1,3 +1,46 @@
 .overview {
-	display: none;
+	&__title {
+		color: $darkGrayishBlueText;
+		display: block;
+		font-size: 2.5rem;
+		margin: 0 auto;
+		width: 90%;
+	}
+	&__item {
+		background-color: $lightGrayishBlueCarkBg;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 2rem auto 0;
+		width: 90%;
+	}
+
+	&__name {
+		color: $darkGrayishBlueText;
+		flex-basis: 80%;
+		font-weight: 700;
+		margin: 2.5rem 0 0 2rem;
+	}
+
+	&__icon {
+		height: 3vh;
+		margin: 2.5rem 2rem 0 0;
+	}
+
+	&__number {
+		font-size: 3.5rem;
+		font-weight: 700;
+		margin: 1.5rem 0 2rem 1.8rem;
+	}
+
+	&__range {
+		align-self: center;
+		color: $limeGreen;
+		font-weight: 700;
+		margin-right: 2rem;
+	}
+
+	.overview__range--negative {
+		color: $brightRed;
+	}
 }
