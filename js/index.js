@@ -4,7 +4,7 @@ const dashboardItems = document.querySelectorAll('.dashboard__item');
 const overviewItems = document.querySelectorAll('.overview__item');
 const overviewTitle = document.querySelector('.overview__title');
 
-const toggleTheme = () => {
+function toggleTheme() {
     toggleThemeButton.classList.toggle('header__theme-button--dark-mode');
     document.body.classList.toggle('dark');
     header.classList.toggle('dark');
